@@ -11,6 +11,22 @@ import {
 } from 'lucide-react';
 
 const Services: React.FC = () => {
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      const offset = 80;
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const services = [
     {
       title: 'صياغة عقود التأسيس',
@@ -68,8 +84,11 @@ const Services: React.FC = () => {
               {service.desc}
             </p>
             
-            <button className="flex items-center gap-2 text-[#d4af37] text-sm font-bold group/btn">
-              <span>اقرأ المزيد</span>
+            <button 
+              onClick={scrollToContact}
+              className="inline-flex items-center gap-2 text-[#d4af37] text-sm font-bold group/btn hover:underline underline-offset-8 focus:outline-none"
+            >
+              <span>اطلب الخدمة الآن</span>
               <ChevronLeft className="w-4 h-4 group-hover/btn:-translate-x-1 transition-transform" />
             </button>
           </div>

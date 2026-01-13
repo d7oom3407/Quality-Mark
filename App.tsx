@@ -25,29 +25,29 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-[#0a0a0a] selection:bg-[#d4af37] selection:text-black overflow-x-hidden">
       <Navbar scrolled={scrolled} />
       <main>
-        <section id="home">
+        <section id="home" className="scroll-mt-20">
           <Hero />
         </section>
         
         <Stats />
         
-        <section id="about" className="py-20 px-4">
+        <section id="about" className="py-20 px-4 scroll-mt-20">
           <About />
         </section>
 
-        <section id="services" className="py-20 bg-gradient-to-b from-transparent to-[#0f0f0f]">
+        <section id="services" className="py-20 bg-gradient-to-b from-transparent to-[#0f0f0f] scroll-mt-20">
           <Services />
         </section>
 
-        <section id="features" className="py-20">
+        <section id="features" className="py-20 scroll-mt-20">
           <Features />
         </section>
 
-        <section id="testimonials" className="py-20 bg-[#0a0a0a]">
+        <section id="testimonials" className="py-20 bg-[#0a0a0a] scroll-mt-20">
           <Testimonials />
         </section>
 
-        <section id="contact" className="py-20 bg-gradient-to-t from-black to-[#0a0a0a]">
+        <section id="contact" className="py-20 bg-gradient-to-t from-black to-[#0a0a0a] scroll-mt-20">
           <Contact />
         </section>
       </main>
