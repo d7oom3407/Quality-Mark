@@ -26,18 +26,14 @@ const Footer: React.FC = () => {
             <div className="flex items-center gap-4">
               <button 
                 onClick={() => scrollToId('home')}
-                className="h-16 flex items-center focus:outline-none"
+                className="h-20 flex items-center focus:outline-none"
               >
                 <img 
                   src="https://qualitymarksa.com/wp-content/uploads/2025/04/TRd-1.png" 
                   alt="Quality Mark Logo Footer" 
-                  className="h-full w-auto object-contain" 
+                  className="h-full w-auto object-contain drop-shadow-[0_0_10px_rgba(212,175,55,0.2)]" 
                 />
               </button>
-              <div className="flex flex-col border-r border-white/10 pr-4 mr-4">
-                <span className="text-2xl font-black gold-text tracking-tighter">Quality Mark</span>
-                <span className="text-[10px] text-gray-500 uppercase tracking-widest">Business Services Since 2012</span>
-              </div>
             </div>
             <p className="text-gray-400 max-w-sm leading-relaxed">
               شريككم الاستراتيجي لتأسيس ونمو الأعمال في المملكة العربية السعودية. نسخر خبراتنا لتسهيل رحلتكم الاستثمارية.

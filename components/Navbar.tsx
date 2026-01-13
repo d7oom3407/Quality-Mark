@@ -45,22 +45,18 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          {/* Logo Section */}
-          <div className="flex-shrink-0 flex items-center gap-3">
+          {/* Logo Section - Clean Version */}
+          <div className="flex-shrink-0">
             <button 
               onClick={(e) => scrollToSection(e, 'home')}
-              className="h-12 flex items-center justify-center focus:outline-none"
+              className="h-14 flex items-center justify-center focus:outline-none"
             >
               <img 
                 src="https://qualitymarksa.com/wp-content/uploads/2025/04/cropped-VER-Copy-1.png" 
                 alt="Quality Mark Logo" 
-                className="h-10 w-auto object-contain drop-shadow-[0_0_8px_rgba(212,175,55,0.3)]" 
+                className="h-12 w-auto object-contain drop-shadow-[0_0_12px_rgba(212,175,55,0.4)]" 
               />
             </button>
-            <div className="flex flex-col border-r border-white/20 pr-3 mr-3 hidden lg:flex">
-              <span className="text-lg font-black tracking-tight gold-text leading-tight">Quality Mark</span>
-              <span className="text-[9px] text-gray-400 uppercase tracking-[0.2em] font-bold">Business Services</span>
-            </div>
           </div>
 
           {/* Navigation Links */}
